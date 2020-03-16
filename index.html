@@ -255,7 +255,7 @@ let sendRec = ()=>{
   const user_id = 571537978;
   const fields = 'photo_100'
 
-  axios.get('users/'+user_id+'/'+fields'&'+token +fields '&'+'v=5.52')then(data=>{
+  axios.get('users/'+user_id+'/'+fields'&'+token +fields '&'+'v=5.52').then(data=>{
     console.log(data);
   })
 }
