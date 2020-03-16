@@ -253,9 +253,14 @@ button {
   // }
 let sendRec = ()=>{
   const user_id = 571537978;
-  const fields = 'photo_100'
-
-  axios.get('users/'+user_id+'/'+fields+'&'+token+fields+'&'+'v=5.52').then(data=>{
+  const fields = 'photo_100';
+  const token = 'access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9';
+  const instance = axios.create({
+    headers:{},
+    withCredentials:true,
+    baseURL:'https://api.vk.com/method/',
+})
+  instance.get('users/'+user_id+'/'+fields+'&'+token+fields+'&'+'v=5.52').then(data=>{
     console.log(data);
   })
 }
@@ -290,7 +295,7 @@ let sendRec = ()=>{
 // https://oauth.vk.com/blank.html#access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9&expires_in=86400&user_id=571537978
 // access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9
 let getURL=(method,params)=>{
-  const staticUrl = '//api.vk.com/method/';
+  const staticUrl = 'https://api.vk.com/method/';
   const token = 'access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9';
  
   return staticUrl + method + '?' + jQuery.param(params) +'&'+token + '&'+'v=5.52'
