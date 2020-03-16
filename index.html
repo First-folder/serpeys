@@ -1,369 +1,203 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<link rel="stylesheet" type="text/css" href="../serpeys/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="../serpeys/css/style_type.css">
-	<link rel="stylesheet" type="text/css" href="../serpeys/css/style.css">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="msapplication-config" content="/img/browserconfig.xml" />
+	<meta name="description" content="Hello! I’m Burdin Yuri. Junior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects/
+	Здравствуйте! Я Бурдин Юрий.Веб-разработчик, специализирующийся на разработке интерфейсов.
+	">
+	<meta name="Keywords" content="Верстка, wordpress, Создание сайта, burdin, work,education,pedagogical">
+	<script  src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<title>Portfolio Burdin developer</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148445845-3"></script>
+		<script async>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-148445845-3');
+		</script>
+		
+			<script async type="text/javascript" >
+			   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+			   ym(55592281, "init", {
+			        clickmap:true,
+			        trackLinks:true,
+			        accurateTrackBounce:true
+			   });
+			</script>
+			<!-- <noscript><div><img src="https://mc.yandex.ru/watch/55592281" style="position:absolute; left:-9999px;" alt="metrika" /></div></noscript> -->
+			
+
+	<link rel="stylesheet" type="text/css" href="/css/style_type.css">
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/script/foto_cart.js"></script>
 	
-	 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://use.fontawesome.com/dff38904a8.js"></script>
-<script src="../js/index.js"></script>
-	<title></title>
-  <style>
-  .IseeYou {
-  height: 100px;
-  width: 100px
-    ;
-  background: #4ca75f;
-  display: block;
-  margin-bottom: 10px;
-}
-.wrapper{
-  position: relative;
-}
-#aHolder{
-  position: relative; 
-  z-index: 2;
-}
-#task{
- display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(10,250px);
-    grid-gap:10px;
-  background-color: #C4CB7A;
-  /*display: none;*/
-}
-
-.twoLayer{
-  position: absolute;
-  z-index: 10;
-   left: 0;
-  top: 0;
-}
-.red_square{
-   height: 100px;
-  width: 100px
-    ;
-  background: #A55A48;
-  display: block;
-  margin-bottom: 10px;
-}
-.blue_square{
-  height: 100px;
-  width: 100px
-    ;
-  background: #4ca75f;
-  display: block;
-  margin-bottom: 10px;
-}
-body { 
-  background-color: #0060cc; 
-  text-align:  center
-     }
-
-main {
-  position: relative;
-  background: white;
-  height: 200px;
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
-  resize: both;
-  overflow: auto;
-}
-
-.logo {
-  margin: 20px 0 10px;
-  max-height: 60px;
-}
-  
-.titile {
-    margin: 20px 0 18px;
-    font-family: Roboto;
-    font-size: 26px;
-    color: white;
-}
-
-.text1 {
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-family: Roboto;
-    font-size: 16px;
-    text-align:  center;
-    color: white;
-    }
-
-.text2 {
-    position: relative;
-    letter-spacing: 1px;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-family: Roboto;
-    font-size: 16px;
-    text-align:  center;
-    color: #0060cc;
-    }
-  
-button { 
-    margin: 30px 0 5px;
-    width: 80%;
-    font-family: Roboto;
-    font-size: 16px;
-    height: 42px;
-    border-radius: 8px;
-    font-weight: 800;
-    background: #0060cc;
-    color: white;
-}
-
-.titile2 {
-    font-family: Roboto;
-    font-size: 26px;
-    text-align:  center;
-    font-weight: 800;
-    color: #0060cc;
-}
-
-
-.countdown-title {
-    font-family: Roboto;
-    font-size: 26px;
-    text-align:  center;
-    font-weight: 800;
-    color: white;
-}
- 
-.countdown {
-    font-family: Roboto;
-    font-size: 26px;
-    text-align:  center;
-    font-weight: 800;
-    color: white;
-}
- 
-.countdown-number {
-  padding: 10px;
-  border-radius: 3px;
-  background: #808080;
-  display: inline-block;
-  
-}
- 
-.countdown-time {
-  padding: 15px;
-  border-radius: 3px;
-  background: white;
-  display: inline-block;
-  color: #0060cc;
-}
- 
-.countdown-text {
-  display: block;
-  padding-top: 5px;
-  font-size: 16px;
-}
-
-#example_1 
-{
-  display:block;
-}
-
-.myNewButton{
-  height: 70px;
-  width: 200px;
-  background-color: #387B48;
-  color:white;
-  cursor: pointer;
-
-}
-.add_to_cart_button{
-  margin-top: 50px;
-  height: 50px;
-  background-color: #BA9E9E;
-
-  cursor: pointer;
-}
- .itemVolue{
-        position: relative;
-        width: 50px;
-        height: 13px;
-        background-color:#d1d6de ;
-        margin-left: 10px;
-        cursor: pointer;
-       
-       
-    }
-     .itemVolumeActive{
-            width: 25%;
-            height: 13px;
-            background-color: #5181b8; 
-        }
-#container{
-  height: 500px;
-  width: 100%;
-}
-
-</style>
 </head>
+<body>
+<div class="wrapper">
+	<div class="profile">
+		<div class="foto">
+			<div class="foto_front"></div>
+			<div class="foto_back"> </div>
+
+		</div>
+			<div class="profile_info">
+				<h2 class="heading heading_light">Profile</h2>
+				<p class="text">Hello! I’m Burdin Yuri. Junior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. 
+				</p>
+				<div class="wrapperContactSendMail">
+						<div class="contact">
+							<div class="contact_item">
+								<h3><i class="fab fa-viber"></i>  Viber </h3>
+								<a href="#" class="contact_text"> +7 951 445 468 9 </a>
+							</div>
+
+							<div class="contact_item">
+								<h3><i class="far fa-envelope"></i>  Email </h3>
+								<a  class="contact_text"> <img src="/img/email.jpg" alt="mail"> </a>
+							</div>
+
+							<div class="contact_item">
+								<h3><i class="fas fa-globe-europe"></i>  Web </h3>
+								<a href="http://serpeys.site" class="contact_text"> www.serpeys.site </a>
+							</div>
+							<div class="contact_item">
+								<h3><i class="fab fa-telegram-plane"></i>  Telegram </h3>
+								<a href="http://serpeys.site" class="contact_text"> @YuraBurdin </a>
+							</div>
+
+							<div class="contact_item">						
+								<h3><i class="fas fa-map-marker-alt"></i>  Home </h3>
+								<address class="contact_text">
+									 Russia, Chelyabinsk, 
+									Young guards 7
+								</address>						
+							</div>
+											
+						</div>
+						<div class="send_mail">
+							<form id="info" method="post">
+								<input type="text" name="name" placeholder="Имя">
+								<input type="text" name="patronymic" placeholder="Отчество">
+								<input type="text" name="phone" placeholder="Телефон">
+								<input type="text" name="email" placeholder="email">
+								<textarea name="message" placeholder="Сообщение"></textarea>
+
+								<div><button class="send_message" >Отправить</button></div>
+							</form>
+						</div>
+				</div>
+				<h2 class="heading heading_light"> languages</h2>
+			</div>
+			
+			<div class="languages_info" > 
+				<div class="languages"> 
+					<span class="languages_text">English</span>
+					<strong class="languages_per">50%</strong>
+				</div>
+
+				<div class="languages"> 
+					<span class="languages_text">Russian</span>
+					<strong class="languages_per">50%</strong>
+				</div>
+
+				<div class="languages"> 
+					<span class="languages_text">NO NAME</span>
+					<strong class="languages_per">10%</strong>
+				</div>
+
+				<span class="line"></span>
 
 
- <body>
-<div class="cube">
-  <div class="picture">
-    
-  </div>
- </div>
+			</div>
+				</div>
+	<div class="resume">
+		<div class="wrapper_resume">
+			<div class="wrapper_logo">
+				<span class="logo_left"></span>
+					<div class="logo"><span class="font_two">B/Y</span></div>
+				<span class="logo_right"></span>
+			</div>
+			<div class="about">
+				<h1 class="name font_two"> Burdin Yuri</h1>
+				<p class="position font_one" >web developer</p>
+				
+				<div class="about_contact">
+					<a href="#" class="about_contact_link"><b> v </b> : +7 951 445 468 9</a>|
+					<a href="" class="about_contact_link"><b> e </b> : <img src="/img/email_white.jpg" alt="email"></a>|
+					<a href="#" class="about_contact_link"><b> w </b> : www.serpeys.site</a>
+					
+				</div>
+			</div>
+			<div class="experience"> 
+				<h3 class="heading_white">My work</h3>
 
+				<!-- <ul class="list">
+					<li class="list_item">
+						<h3 class="title_item">Freelance</h3>
+						<span  class="data_item">Jan 2016 - 0ct 2016</span>
+						<p class="text_item">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>
+					</li>
 
-<input class="authB" type="submit" value="Авторизироваться" id="bt1" name="bt1" />
-<input class="authAjax" type="submit" value="Авторизироваться AJAX" id="bt1" name="bt1" />
+					<li class="list_item">
+						<h3 class="title_item">Hexogan Web Development Company</h3>
+						<span  class="data_item">Jan 2016 - 0ct 2016</span>
+						<p class="text_item">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>
+					</li>
 
- </body>
+					<li class="list_item">
+						<h3 class="title_item">Hexogan Web Development Company</h3>
+						<span  class="data_item">Jan 2016 - 0ct 2016</span>
+						<p class="text_item">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>
+					</li>
+					
+				</ul> -->
+				<div  class="wrapper_work">
+					<div  class="item"> <a href="http://quarry.serpeys.site"><img src="/img/img_work5.jpg" alt="example_of_work"> </a> </div>
+					<div  class="item"><a href="http://renova.serpeys.site"><img src="/img/img_work3.jpg" alt="example of work"> </a> </div>
+					<div  class="item"><a href="http://xepcon.serpeys.site"><img src="/img/img_work4.jpg" alt="example of work"></a> </div>
+					<div  class="item"> <a href="http://advice.serpeys.site"><img src="/img/img_work7.jpg" alt="example of work"></a></div>
+				</div>
+				<h3 class="heading_white">education</h3>
+				<ul class="list">
+					<li class="list_item">
+						<h3 class="title_item">Chelyabinsk State pedagogical University </h3>
+						<span  class="data_item">1997 - 2002</span>
+						<p class="text_item">Faculty of physics, Informatics </p>
+					</li>
+				</ul>
+				
 
+			</div>
+			<div class="skills">
+				 <h4 class="heading_white"> skills</h4>
+				
+				<ul class="list item_card">
+					<li class="list_item"><span>wordpress</span> <div class="percent"></div></li>
+					<li class="list_item"><span>HTML</span><div class="percent"></div></li>
+					<li class="list_item"><span>Photoshop</span><div class="percent"></div></li>
+					<li class="list_item"><span>Java Script</span><div class="percent"></div></li>
+					<li class="list_item"><span>Php</span><div class="percent"></div></li>
+					<li class="list_item"><span>css</span><div class="percent"></div></li>
+					<li class="list_item"><span>My SQL</span><div class="percent"></div></li>
 
-
-// let obj = document.querySelectorAll('dir.a');
-// console.log(obj);
-// let carousel = document.querySelectorAll('div.a');
-// for(let li of carousel) {
-//     console.log(li);
-//     console.log("7878");
-    
-//     }
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script type="text/javascript">
-  document.querySelector('.authB').onclick = ()=>{
-    sendRec();
-  }
-   document.querySelector('.authAjax').onclick = ()=>{
-    sendRecAjax();
-  }
-  let sendRecAjax = ()=>{
-   Request();
-  }
-
-  // let sendRec = ()=>{
-  //  axios({
-  //     method:'get',
-  //     url:getURL('users.get',{user_id:571537978,fields:'photo_100'}), 
-  //     responseType:'json',
-     
-  //    })
-  // }
-let sendRec = ()=>{
-  const user_id = 571537978;
-  const fields = 'photo_100';
-  const token = 'access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9';
-  const instance = axios.create({
-    headers:{},
-    withCredentials:true,
-    baseURL:'https://api.vk.com/method/',
-})
-  instance.get('users/'+user_id+'/'+fields+'&'+token+fields+'&'+'v=5.52').then(data=>{
-    console.log(data);
-  })
-}
-
-
-
-  // let str ="/video/player/video/";
-  // let str_two = "/videos/albums/";
-  // let str_three ="s/sd";
-  // // /.*\/([^/]+)\/[^/]+/
-   let re=/([^/]+)\/[^/]/;
-  // let arr = str_two.match(re);
- // Дана строка 'ahb acb aeb aeeb adcb axeb'. Напишите регулярку, которая найдет строки ahb, acb, aeb по шаблону:
- //  буква 'a', любой символ, буква
- let str = 'aaa aaa aaa';
-  // let reg =/(a+[a-z]+b)/g;  //1 leeson
-   let reg =/aaa/;  //2 leeson
-
-
-   // let arr = str.match(reg);
-   str = 'aaa';
-   // str = str.slice(1);
-   
-   reg=/([a-z]@mail\.ru)/g;
-   console.log(reg.test('mymail@mail.ru'));
-   // let result = str.test(reg);
-   // result = result.replace(reg_one,"/")
-   // let result = str.replace(/ab+a/g,'!');
-   console.log(str);
-   // console.log(result);
-// https://oauth.vk.com/authorize?client_id=7359726&display=page&scope=friends,status,photos&response_type=token&v=5.52
-// https://oauth.vk.com/blank.html#access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9&expires_in=86400&user_id=571537978
-// access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9
-let getURL=(method,params)=>{
-  const staticUrl = 'https://api.vk.com/method/';
-  const token = 'access_token=a700547879b4213d1a0ca74854d523634fff5acecafecac2e5918f0531df469001b8ecfa6c298c1a8d1f9';
- 
-  return staticUrl + method + '?' + jQuery.param(params) +'&'+token + '&'+'v=5.52'
-
-}
-
-
- 
- let Request = (method = "",params = {})=>{
-    jQuery.ajax({
-      url:getURL('users.get',{user_id:571537978,fields:'photo_100'}),
-      method:'GET',
-      dataType:'JSONP',
-      success:(data)=>{
-        console.log(data)
-      }
-    })  
- }
- // Request();
- 
-
-
-
-
-
-//   axios.get(getURL('users.get',{user_id:571537978,fields:'photo_100'})).then(resp => {
-
-//     console.log(resp.data);
-// });
-
-//  axios.get('http://webcode.me').then(resp => {
-
-//     console.log(resp.data);
-// });
-  // console.log(arr);
-//   var re = /яблоки/gi;
-//  str = 'Яблоки круглые и яблоки сочные.';
-// var newstr = str.replace(re, 'апельсины');
-// console.log(newstr); // апельсины круглые и апельсины сочные.
-</script>
-
-
-
-  
-<!-- <script>
-      jQuery(function(){
-        jQuery('#ajaxSend').click(()=>{
-          jQuery.ajax({
-            url:'testajax.php',            
-            type: 'POST',
-            data:{
-            action:'myform',
-            param1:1,
-            param2:2
-            },
-            beforeSend:(xhr)=>{
-              jQuery('#ajaxSend').text('...загрузка')
-            },
-            success : (data)=>{
-              console.log("data__  ");              
-              console.log(data);
-              jQuery('#ajaxSend').text('Забронировать');
-            }
-          });
-        });
-      })    
-    </script> -->
-
-
-
+				</ul>
+			</div>
+		</div>
+	</div> 
+	
+</div>
+<script  src="/script/cart_rotation.js"></script>
+<script  src="/script/formMessage.js"></script>
+</body>
 </html>
+
+
