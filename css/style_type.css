@@ -1,0 +1,569 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.ttf');
+  src: url('../fonts/Roboto-Light.ttf') format('eot'), url('../fonts/Roboto-Light.ttf') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.ttf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf');
+  src: url('../fonts/Roboto-Bold.ttf') format('eot'), url('../fonts/Roboto-Bold.ttf') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.ttf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font_one {
+  font-family: 'Roboto-Light';
+}
+.font_two {
+  font-family: 'Roboto-Bold';
+}
+.wrapper {
+  background-color: #f2f2f2;
+  width: 960px;
+  height: 1428px;
+  margin: 20px auto;
+  display: flex;
+}
+.wrapper .profile {
+  max-width: 350px;
+  background-color: #39383a;
+}
+.wrapper .profile .foto {
+  position: relative;
+  height: 233px;
+  background-size: cover;
+  perspective: 1000px;
+}
+.wrapper .profile .foto .foto_front,
+.wrapper .profile .foto .foto_back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: 400ms all ease-in-out;
+  backface-visibility: hidden;
+  background-size: cover !important;
+}
+.wrapper .profile .foto .foto_front {
+  background-color: blue;
+  background: url('/img/foto1.jpg');
+}
+.wrapper .profile .foto .foto_back {
+  background: url('/img/foto3.jpg');
+  transform: rotateY(180deg);
+}
+.wrapper .profile .foto:hover .foto_front {
+  transform: rotateY(180deg);
+}
+.wrapper .profile .foto:hover .foto_back {
+  transform: rotateY(360deg);
+}
+.wrapper .profile .heading {
+  text-transform: uppercase;
+  border-bottom: 2px #5a5a5a dashed;
+  font-family: 'Roboto-Bold';
+}
+.wrapper .profile .heading_light {
+  color: white;
+  padding-bottom: 16px;
+}
+.wrapper .profile .profile_info {
+  padding: 51px 26px 70px 31px ;
+}
+.wrapper .profile .profile_info .text {
+  color: #ababab;
+  width: 293px;
+  height: 160px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.wrapper .profile .profile_info .contact_text {
+  color: #ababab;
+  margin-left: 23px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail {
+  perspective: 1000px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  position: relative;
+  transition: all 1400ms ease-in-out;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: all 1400ms ease-in-out;
+  font-family: 'Roboto-Light';
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item {
+  border-bottom: 2px #5a5a5a dashed;
+  padding-bottom: 16px;
+  margin-bottom: 35px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item a img {
+  height: 18px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 {
+  color: white;
+  margin-bottom: 12px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .fas {
+  margin-right: 7px;
+  transform: rotate(99deg);
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .fas:before {
+  color: white;
+  font-size: 12px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .far,
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .fab {
+  margin-right: 7px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .far:before,
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item h3 .fab:before {
+  color: white;
+  font-size: 14px;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .contact .contact_item:nth-child(5) h3 .fas {
+  transform: rotate(0deg);
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .send_mail {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0 ;
+  transform: rotateY(180deg);
+  transition: all 1400ms ease-in-out;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .send_mail input {
+  margin: 5px auto auto auto;
+  width: 80%;
+  height: 35px;
+  border-radius: 3px;
+  display: block;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .send_mail textarea {
+  width: 80%;
+  height: 70px;
+  display: block;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 5px auto auto auto;
+}
+.wrapper .profile .profile_info .wrapperContactSendMail .send_mail button {
+  width: 70%;
+  height: 50px;
+  display: block;
+  border-radius: 3px;
+  margin: 5px auto auto auto;
+  letter-spacing: 0.3em;
+}
+.wrapper .profile .languages_info {
+  margin-left: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .profile .languages_info .languages {
+  width: 100px;
+  height: 100px;
+  border: 6px solid #5c5c5c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 29px;
+  margin-right: 31px;
+}
+.wrapper .profile .languages_info .languages .languages_text {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.44px;
+  color: #ababab;
+  margin-bottom: 5px;
+}
+.wrapper .profile .languages_info .languages .languages_per {
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.44px;
+}
+.wrapper .profile .languages_info .line {
+  position: relative;
+  display: block;
+  font-size: 0;
+  height: 2px;
+  width: 102px;
+  background-color: #5c5c5c;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.wrapper .profile .languages_info .line:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #5c5c5c;
+  width: 92px;
+  height: 2px;
+  left: -10px;
+  top: 20px;
+}
+.wrapper .profile .languages_info .line:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #5c5c5c;
+  width: 92px;
+  height: 2px;
+  left: -10px;
+  top: -20px;
+}
+.wrapper .resume {
+  padding: 25px 28px 0px 25px;
+}
+.wrapper .resume .wrapper_resume {
+  border: 1px solid rgba(168, 168, 168, 0.44);
+  background-color: white;
+  width: 536px;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_left {
+  position: relative;
+  font-size: 0;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #39383a;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_left:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #39383a;
+  width: 43px;
+  height: 2px;
+  left: 20px;
+  top: -17px;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #39383a;
+  width: 43px;
+  height: 2px;
+  left: 20px;
+  top: 17px;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin: 35px 25px 38px 25px;
+  border-radius: 50%;
+  border: 1px solid #39383a;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 83px;
+  text-transform: uppercase;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_right {
+  position: relative;
+  font-size: 0;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #39383a;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #39383a;
+  width: 43px;
+  height: 2px;
+  left: -8px;
+  top: -17px;
+}
+.wrapper .resume .wrapper_resume .wrapper_logo .logo_right:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #39383a;
+  width: 43px;
+  height: 2px;
+  left: -8px;
+  top: 17px;
+}
+.wrapper .resume .wrapper_resume .about {
+  max-width: 430px;
+  margin: auto auto 39px auto;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 32px;
+}
+.wrapper .resume .wrapper_resume .about .name {
+  font-size: 16px;
+  font-weight: 500px;
+  text-transform: uppercase;
+  letter-spacing: 19px;
+  margin-bottom: 15px;
+}
+.wrapper .resume .wrapper_resume .about .position {
+  font-size: 10px;
+  font-weight: 400px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.wrapper .resume .wrapper_resume .about .about_contact .about_contact_link {
+  text-decoration: none;
+  color: #39383a;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+}
+.wrapper .resume .wrapper_resume .about .about_contact .about_contact_link img {
+  height: 10px;
+}
+.wrapper .resume .wrapper_resume .heading_white {
+  color: #39383a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 65.87px;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 23px;
+  font-family: 'Roboto-Bold';
+}
+.wrapper .resume .wrapper_resume .experience {
+  padding-left: 56px;
+  max-width: 430px;
+}
+.wrapper .resume .wrapper_resume .experience .list .list_item {
+  position: relative;
+  padding-left: 39px;
+}
+.wrapper .resume .wrapper_resume .experience .list .list_item .title_item {
+  color: #39383a;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.73px;
+  margin-bottom: 12px;
+}
+.wrapper .resume .wrapper_resume .experience .list .list_item .data_item {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #39383a;
+  letter-spacing: 0.68px;
+  margin-bottom: 19px;
+}
+.wrapper .resume .wrapper_resume .experience .list .list_item .text_item {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.5px;
+  letter-spacing: 0.38px;
+  color: #777777;
+  margin-bottom: 60px;
+}
+.wrapper .resume .wrapper_resume .experience .list .list_item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 9px;
+  width: 9px;
+  background-color: black;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.wrapper .resume .wrapper_resume .experience .wrapper_work {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(170px, auto) minmax(170px, auto);
+  grid-gap: 3px;
+}
+.wrapper .resume .wrapper_resume .experience .wrapper_work .item {
+  background-color: #cdb1b1;
+}
+.wrapper .resume .wrapper_resume .experience .wrapper_work .item a img {
+  height: 170px;
+  width: 100%;
+}
+.wrapper .resume .wrapper_resume .skills {
+  margin-left: 55px;
+  margin-bottom: 70px;
+  width: 430px;
+  height: 300px;
+  perspective: 1000px;
+  transform-style: preserve- 3 d;
+  transition: transform  0.2s;
+}
+.wrapper .resume .wrapper_resume .skills .item_card {
+  height: 300px;
+  transition: transform  0.2s;
+  --sizeX: 0deg;
+  --sizeY: 0deg;
+  transform: rotateY(var(--sizeX)) rotateX(var(--sizeY));
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item span {
+  color: #39383a;
+  letter-spacing: 0.73px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 35px;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item .percent {
+  position: relative;
+  display: inline-block;
+  height: 8px;
+  width: 267px;
+  border: 1px solid black;
+  margin-right: 50px;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(1) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 45%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(2) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 90%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(3) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 55%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(4) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 60%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(5) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 25%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(6) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 75%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+.wrapper .resume .wrapper_resume .skills .list .list_item:nth-child(7) .percent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 10%;
+  background-color: #898989;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 420px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .wrapper .profile {
+    max-width: 100%;
+  }
+  .wrapper .profile .profile_info .text {
+    width: 100%;
+  }
+  .wrapper .resume {
+    width: inherit;
+    box-sizing: border-box;
+  }
+  .wrapper .resume .wrapper_resume {
+    width: inherit;
+  }
+  .wrapper .resume .wrapper_resume .about .about_contact .about_contact_link {
+    font-size: 12px;
+  }
+  .wrapper .resume .wrapper_resume .text_item {
+    margin-bottom: 0 !important;
+  }
+  .wrapper .resume .wrapper_resume .experience {
+    padding-left: 0;
+  }
+  .wrapper .resume .wrapper_resume .experience .wrapper_work {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(170px, auto));
+  }
+  .wrapper .resume .wrapper_resume .skills {
+    width: 100%;
+    margin-left: 0;
+  }
+  .wrapper .resume .wrapper_resume .skills .list {
+    padding: 0 10px 0 10px;
+  }
+  .wrapper .resume .wrapper_resume .skills .list .list_item .percent {
+    margin-right: 0;
+    width: 180px;
+  }
+}
+@media (max-width: 320px) {
+  
+}
