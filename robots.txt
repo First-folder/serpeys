@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 User-agent: *
 Disallow: /fonts/
 Disallow: /js/
@@ -14,3 +15,21 @@ Allow: /css/*.css
 
 Sitemap: http://renova.serpeys.site/sitemap.xml
 Host: http://renova.serpeys.site
+=======
+User-agent: *
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /css/
+
+User-agent: Yandex
+Allow: *.html
+Allow: /css/*.css
+
+
+User-agent: Google
+Allow: *.html
+Allow: /css/*.css
+
+Sitemap: http://renova.serpeys.site/sitemap.xml
+Host: http://renova.serpeys.site
+>>>>>>> 87cad720dbefedec207093a182dca311d5ef44aa
