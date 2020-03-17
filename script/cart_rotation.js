@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var obj_t  =   document.querySelectorAll('.skills');
 	i=0;
 	// console.log("ROTATION__"+obj_t.length);
@@ -35,7 +35,7 @@ var obj_t  =   document.querySelectorAll('.skills');
  	//через переменные css
  	cart_item.style.setProperty('--sizeX', 0+'deg');
     cart_item.style.setProperty('--sizeY', 0+'deg');
-=======
+
 var obj_t  =   document.querySelectorAll('.skills');
 	i=0;
 	// console.log("ROTATION__"+obj_t.length);
@@ -72,5 +72,5 @@ var obj_t  =   document.querySelectorAll('.skills');
  	//через переменные css
  	cart_item.style.setProperty('--sizeX', 0+'deg');
     cart_item.style.setProperty('--sizeY', 0+'deg');
->>>>>>> 87cad720dbefedec207093a182dca311d5ef44aa
+
  }
