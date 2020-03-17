@@ -51,10 +51,10 @@
 }
 .wrapper .profile .foto .foto_front {
   background-color: blue;
-  background: url('./img/foto1.jpg');
+  background: url('../img/foto1.jpg');
 }
 .wrapper .profile .foto .foto_back {
-  background: url('./img/foto3.jpg');
+  background: url('../img/foto3.jpg');
   transform: rotateY(180deg);
 }
 .wrapper .profile .foto:hover .foto_front {
