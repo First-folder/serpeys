@@ -1,7 +1,7 @@
 
 var i_rotation = 0, 
-arr_foto_back =  ['url("/img/foto4.jpg")','url("/img/foto5.jpg")','url("/img/foto7.jpg")'],
-arr_foto_front = ['url("/img/foto1.jpg")','url("/img/foto2.jpg")','url("/img/foto3.jpg")'],
+arr_foto_back =  ['url("img/foto4.jpg")','url("img/foto5.jpg")','url("img/foto7.jpg")'],
+arr_foto_front = ['url("img/foto1.jpg")','url("img/foto2.jpg")','url("img/foto3.jpg")'],
 j_foto=0,
 i_foto=0;
 
